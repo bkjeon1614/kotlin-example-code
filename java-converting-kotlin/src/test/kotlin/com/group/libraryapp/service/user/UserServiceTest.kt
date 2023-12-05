@@ -25,7 +25,7 @@ class UserServiceTest @Autowired constructor(
         val result = userRepository.findAll()
         assertThat(result).hasSize(1)
 
-        // 플랫폼 타입일 경우 NPE 가 발생하므로 해당 User class (Return Class) 의 getter 에 jetbrains.annotations 의 @NotNull, @Nullable 을 선언하자.
+        // 값을 가져올 때 플랫폼 타입일 경우 NPE 가 발생하므로 해당 User class (Return Class) 의 getter 에 jetbrains.annotations 의 @NotNull, @Nullable 을 선언하자.
         assertThat(result[0].name).isEqualTo("bkjeon")
         assertThat(result[0].age).isNull()
     }
