@@ -5,7 +5,11 @@ public class BookRequest {
   private String name;
 
   public String getName() {
-    return name;
+      return name;
+  }
+
+  public BookRequest(String name) {
+      this.name = name;
   }
 
 }
