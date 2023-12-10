@@ -6,23 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a5307037-e7a6-440e-8db2-4811f3cfb175" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/16855b605ec06fc203113247571d3282b612f54b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0c8957e937fff6691ac488aeaaf1c0d697fe4b7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/6/16855b605ec06fc203113247571d3282b612f54b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/0/c0c8957e937fff6691ac488aeaaf1c0d697fe4b7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/book/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/loanhistory/UserLoanHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/book/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/group/libraryapp/service/user/UserServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/group/libraryapp/service/user/UserServiceTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/book/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/loanhistory/UserLoanHistoryRepository.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +57,7 @@
       <list>
         <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -236,7 +224,7 @@
       <workItem from="1701739963484" duration="10419000" />
       <workItem from="1701952964804" duration="1458000" />
       <workItem from="1702043293285" duration="2304000" />
-      <workItem from="1702203019110" duration="2445000" />
+      <workItem from="1702203019110" duration="3982000" />
     </task>
     <servers />
   </component>
