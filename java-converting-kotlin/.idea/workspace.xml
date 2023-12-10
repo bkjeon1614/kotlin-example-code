@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5307037-e7a6-440e-8db2-4811f3cfb175" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/loanhistory/UserLoanHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/loanhistory/UserLoanHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/book/request/BookLoanRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/book/request/BookLoanRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/book/request/BookRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/book/request/BookRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/book/request/BookReturnRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/dto/book/request/BookReturnRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/16855b605ec06fc203113247571d3282b612f54b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0c8957e937fff6691ac488aeaaf1c0d697fe4b7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/6/16855b605ec06fc203113247571d3282b612f54b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/0/c0c8957e937fff6691ac488aeaaf1c0d697fe4b7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/book/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/domain/user/loanhistory/UserLoanHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/book/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group/libraryapp/service/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/group/libraryapp/service/user/UserServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/group/libraryapp/service/user/UserServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +42,23 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="library-app" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="library-app" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="library-app" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -67,7 +97,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/work/kotlin-example-code/java-converting-kotlin",
+    "last_opened_file_path": "C:/work/library-app-final",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,6 +108,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.group.libraryapp.domain.book" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.java-converting-kotlin [test]">
     <configuration name="java-converting-kotlin [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -180,8 +215,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.java-converting-kotlin [test]" />
-        <item itemvalue="Gradle.java-converting-kotlin [check]" />
         <item itemvalue="JUnit.BookServiceTest" />
+        <item itemvalue="Gradle.java-converting-kotlin [check]" />
         <item itemvalue="JUnit.BookServiceTest.returnBookTest" />
         <item itemvalue="JUnit.BookServiceTest.loanBookFailTest" />
       </list>
@@ -200,7 +235,8 @@
       <workItem from="1701578628313" duration="6212000" />
       <workItem from="1701739963484" duration="10419000" />
       <workItem from="1701952964804" duration="1458000" />
-      <workItem from="1702043293285" duration="2030000" />
+      <workItem from="1702043293285" duration="2304000" />
+      <workItem from="1702203019110" duration="2445000" />
     </task>
     <servers />
   </component>
