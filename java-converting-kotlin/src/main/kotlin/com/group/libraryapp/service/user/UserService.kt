@@ -5,6 +5,8 @@ import com.group.libraryapp.domain.user.UserRepository
 import com.group.libraryapp.dto.user.request.UserCreateRequest
 import com.group.libraryapp.dto.user.request.UserUpdateRequest
 import com.group.libraryapp.dto.user.response.UserResponse
+import com.group.libraryapp.util.fail
+import com.group.libraryapp.util.findByIdOrThrow
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
@@ -30,15 +32,14 @@ class UserService(
 
     @Transactional
     fun updateUserName(request: UserUpdateRequest) {
-        val user = userRepository
-            .findById(request.id)
-            .orElseThrow(::IllegalArgumentException)
+        val user = userRepository.findByIdOrThrow(request.id)
         user.updateName(request.name)
     }
 
     @Transactional
     fun deleteUser(name: String) {
-        val user = userRepository.findByName(name).orElseThrow(::IllegalArgumentException)
+        // ?: (엘비스 연산자): 앞의 연산 결과가 null 이면 뒤의 값을 사용
+        val user = userRepository.findByName(name) ?: fail()
         userRepository.delete(user)
     }
 
