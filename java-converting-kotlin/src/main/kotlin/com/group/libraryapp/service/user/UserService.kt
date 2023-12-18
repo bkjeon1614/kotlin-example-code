@@ -24,7 +24,7 @@ class UserService(
     @Transactional(readOnly = true)
     fun getUsers(): List<UserResponse> {
         return userRepository.findAll()
-            .map { user -> UserResponse(user) }
+            .map { user -> UserResponse.of(user) }
             // or: .map { UserResponse(it) }
             // or: ::UserResponse
             // map 을 쓰는걸 제일 선호
