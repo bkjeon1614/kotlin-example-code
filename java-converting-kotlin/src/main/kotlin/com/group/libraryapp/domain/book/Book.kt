@@ -12,7 +12,7 @@ class Book(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long? = nullddd
+    val id: Long? = null
 ) {
 
     init {
