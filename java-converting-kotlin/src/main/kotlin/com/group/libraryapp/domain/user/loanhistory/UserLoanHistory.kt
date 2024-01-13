@@ -18,6 +18,10 @@ class UserLoanHistory(
     val id: Long? = null,
 ) {
 
+    // 상태 체크에 대한 로직을 여기에 사용함으로써 향후에 재활용하기에 용이하다.
+    val isReturn: Boolean
+        get() = this.status == UserLoanStatus.RETURNED
+
     fun doReturn() {
         this.status = UserLoanStatus.RETURNED
     }
