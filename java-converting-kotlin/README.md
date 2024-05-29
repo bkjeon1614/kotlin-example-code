@@ -12,3 +12,7 @@
 #### Package
 com.group.libraryapp: 도서관리 애플리케이션 개발     
 com.group.coroutine: 코루틴
+
+#### Init
+Querydsl Setting
+- Gradle > Tasks > Build > Build 실행

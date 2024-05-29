@@ -1,2 +1,4 @@
-# kotlin-example-code
-kotlin-example-code
+# JAVA Sample Code
+
+## Code Base
+- [Kotlin + Spring Boot Code Base](https://github.com/bkjeon1614/)
