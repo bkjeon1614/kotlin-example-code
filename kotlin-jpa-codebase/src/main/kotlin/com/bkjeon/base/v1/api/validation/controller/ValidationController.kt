@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/validation")
 class ValidationController {
 
-    // TODO 안됨
     @Operation(summary = "메인", description = "메인 API")
     @Parameters(
-        Parameter(name = "param1", description = "Sample Parameter", required = true)
+        Parameter(name = "param1", description = "Sample Parameter1", required = true),
+        Parameter(name = "param2", description = "Sample Parameter2", required = true)
     )
     @GetMapping("/isParamValidChk")
     fun isApiValidCheck(@Valid request: ValidationRequest): ApiResponse<Any> {

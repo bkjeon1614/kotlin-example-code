@@ -4,5 +4,8 @@ import jakarta.validation.constraints.NotNull
 
 data class ValidationRequest(
     @field:NotNull(message = "param1 을 입력하여 주시길 바랍니다.")
-    val param1: String?
+    val param1: String?,
+
+    @field:NotNull(message = "param2 을 입력하여 주시길 바랍니다.")
+    val param2: String?
 )
