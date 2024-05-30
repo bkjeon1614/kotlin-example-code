@@ -32,6 +32,10 @@ dependencies {
 
 	// Swagger
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0")
+
+	// Cache
+	implementation("org.springframework.boot:spring-boot-starter-cache")
+	implementation("org.ehcache:ehcache:3.9.5")
 }
 
 tasks.withType<KotlinCompile> {

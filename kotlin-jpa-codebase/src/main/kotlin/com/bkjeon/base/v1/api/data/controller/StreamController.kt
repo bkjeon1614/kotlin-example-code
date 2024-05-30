@@ -1,7 +1,7 @@
 package com.bkjeon.base.v1.api.data.controller
 
-import com.bkjeon.base.feature.domain.data.StreamData
-import com.bkjeon.base.log.logger
+import com.bkjeon.base.feature.domain.data.SampleData
+import com.bkjeon.base.core.log.logger
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.tags.Tag
 import org.springframework.web.bind.annotation.GetMapping
@@ -17,15 +17,15 @@ class StreamController {
     @Operation(summary = "arrayList to 연산", description = "ArrayList 의 특정 항목을 연산")
     @GetMapping("/arrayListToCalculate")
     fun getArrayListToCalculate(): Unit {
-        val streamDataList: List<StreamData> = listOf(
-            StreamData("bkjeon", 10, 20_000),
-            StreamData("bkjeon2", 20, 1_000),
-            StreamData("bkjeon3", 30, 10)
+        val sampleDataList: List<SampleData> = listOf(
+            SampleData("bkjeon", 10, 20_000),
+            SampleData("bkjeon2", 20, 1_000),
+            SampleData("bkjeon3", 30, 10)
         )
-        val totalCount: Int = streamDataList.sumOf { it.col2 }  // 60
-        val totalPrice: Int = streamDataList.sumOf { it.col2 * it.col3 }    // 220300
-        val minPrice: Int = streamDataList.minOf { it.col3 }    // 10
-        val maxCount: Int = streamDataList.maxOf { it.col2 }    // 30
+        val totalCount: Int = sampleDataList.sumOf { it.col2 }  // 60
+        val totalPrice: Int = sampleDataList.sumOf { it.col2 * it.col3 }    // 220300
+        val minPrice: Int = sampleDataList.minOf { it.col3 }    // 10
+        val maxCount: Int = sampleDataList.maxOf { it.col2 }    // 30
         log.info("totalCount: $totalCount")
         log.info("totalPrice: $totalPrice")
         log.info("minPrice: $minPrice")
@@ -40,25 +40,25 @@ class StreamController {
      */
     @GetMapping("/arrayListToListString")
     fun getArrayListToListString(): List<String> {
-        val streamDataList: List<StreamData> = listOf(
-            StreamData("bkjeon", 10, 20_000),
-            StreamData("bkjeon2", 20, 1_000),
-            StreamData("bkjeon3", 30, 10)
+        val sampleDataList: List<SampleData> = listOf(
+            SampleData("bkjeon", 10, 20_000),
+            SampleData("bkjeon2", 20, 1_000),
+            SampleData("bkjeon3", 30, 10)
         )
-        return streamDataList.map { it.col1.toString() }
+        return sampleDataList.map { it.col1.toString() }
     }
 
     @Operation(summary = "arrayList to map", description = "ArrayList 를 Map 으로 변환")
     @GetMapping("/arrayListToMap")
     fun getArrayListToMap(): Map<String?, Int?> {
-        val streamDataList: List<StreamData> = listOf(
-            StreamData("bkjeon", 10, 20_000),
-            StreamData("bkjeon2", 20, 1_000),
-            StreamData("bkjeon3", 30, 10),
-            StreamData("bkjeon3", 40, 20)
+        val sampleDataList: List<SampleData> = listOf(
+            SampleData("bkjeon", 10, 20_000),
+            SampleData("bkjeon2", 20, 1_000),
+            SampleData("bkjeon3", 30, 10),
+            SampleData("bkjeon3", 40, 20)
         )
         // associate 는 key 값이 중복되면 마지막 들어온 값이 map 에 추가된다.
-        return streamDataList.associate { it.col1 to it.col2 }
+        return sampleDataList.associate { it.col1 to it.col2 }
     }
 
 }

@@ -1,4 +1,4 @@
-package com.bkjeon.base.log
+package com.bkjeon.base.core.log
 
 import org.slf4j.LoggerFactory
 
