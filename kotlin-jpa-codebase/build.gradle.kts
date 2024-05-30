@@ -36,6 +36,10 @@ dependencies {
 	// Cache
 	implementation("org.springframework.boot:spring-boot-starter-cache")
 	implementation("org.ehcache:ehcache:3.9.5")
+
+	// AWS SDK
+	implementation("software.amazon.awssdk:dynamodb-enhanced")
+	implementation(platform("software.amazon.awssdk:bom:2.20.56"))
 }
 
 tasks.withType<KotlinCompile> {
