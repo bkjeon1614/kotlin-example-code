@@ -3,22 +3,21 @@ echo "==========================================="
 echo "Install Start"
 echo "==========================================="
 
-echo -ne '                          (0%)\r'
+echo '                          (0%)\r'
 sleep 1
 project_path=$(pwd)/docker
 cd ${project_path}
-docker-compose -f docker-compose.yml up &
-wait
+docker-compose -p kotlin-jpa-codebase -f docker-compose.yml up -d
 
-echo -ne '#####                     (33%)\r'
+echo '##########                     (33%)\r'
 sleep 1
 
-echo -ne '#############             (66%)\r'
+echo '##########################             (66%)\r'
 sleep 1
 
-echo -ne '#######################   (100%)\r'
+echo '##############################################   (100%)\r'
 sleep 1
-echo -ne '\n'
+echo '\n'
 
 echo "==========================================="
 echo "FINISHED"
