@@ -30,6 +30,11 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
+	// TestCode
+	testImplementation("io.kotest:kotest-runner-junit5:5.9.1")
+	testImplementation("io.kotest:kotest-assertions-core:5.9.1")
+	testImplementation("io.kotest.extensions:kotest-extensions-spring:1.3.0")
+
 	// DB
 	runtimeOnly("com.h2database:h2")
 
@@ -50,7 +55,7 @@ dependencies {
 	implementation("jakarta.json:jakarta.json-api:2.1.3")
 
 	// Lib
-	implementation("com.google.code.gson:gson:2.7")
+	implementation("com.google.code.gson:gson:2.8.9")
 }
 
 configurations.all {
