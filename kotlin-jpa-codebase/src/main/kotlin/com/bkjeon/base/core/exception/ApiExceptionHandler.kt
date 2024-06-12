@@ -1,8 +1,8 @@
 package com.bkjeon.base.core.exception
 
-import com.bkjeon.base.feature.constants.ResponseMsgConst
-import com.bkjeon.base.feature.model.common.ApiResponse
 import com.bkjeon.base.core.log.logger
+import com.bkjeon.base.feature.common.model.response.ApiResponse
+import com.bkjeon.base.feature.constants.ResponseMsgConst
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.MethodArgumentNotValidException
 import org.springframework.web.bind.annotation.ExceptionHandler

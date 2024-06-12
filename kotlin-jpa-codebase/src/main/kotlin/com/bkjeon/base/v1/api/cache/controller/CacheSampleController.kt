@@ -1,6 +1,6 @@
 package com.bkjeon.base.v1.api.cache.controller
 
-import com.bkjeon.base.feature.model.common.ApiResponse
+import com.bkjeon.base.feature.common.model.response.ApiResponse
 import com.bkjeon.base.v1.api.cache.model.request.CacheSampleRequest
 import com.bkjeon.base.v1.api.cache.service.CacheSampleService
 import io.swagger.v3.oas.annotations.Operation

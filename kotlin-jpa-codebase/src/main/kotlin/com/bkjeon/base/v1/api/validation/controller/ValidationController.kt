@@ -1,6 +1,6 @@
 package com.bkjeon.base.v1.api.validation.controller
 
-import com.bkjeon.base.feature.model.common.ApiResponse
+import com.bkjeon.base.feature.common.model.response.ApiResponse
 import com.bkjeon.base.v1.api.validation.model.request.ValidationRequest
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.Parameter

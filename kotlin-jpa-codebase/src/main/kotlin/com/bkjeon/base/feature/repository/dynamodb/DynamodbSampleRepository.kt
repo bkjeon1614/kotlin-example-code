@@ -17,6 +17,10 @@ import software.amazon.awssdk.services.dynamodb.model.AttributeValue
 class DynamodbSampleRepository(
     dynamoDbClient: DynamoDbEnhancedClient
 ) {
+    companion object {
+        const val TABLE_NAME = DdbIndexConst.SAMPLE_TABLE
+    }
+
     private val table = dynamoDbClient.table(DdbIndexConst.SAMPLE_TABLE, TableSchema.fromBean(SampleTable::class.java))
     private val log = logger()
 

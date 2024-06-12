@@ -4,6 +4,7 @@ class CommonConst {
 
     companion object {
         // common
+        const val YES = "Y"
         const val NO = "N"
 
         // Suffix

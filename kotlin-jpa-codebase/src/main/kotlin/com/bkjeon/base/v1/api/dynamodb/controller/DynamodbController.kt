@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
-@Tag(name = "Stream API", description = "Stream 처리 관련 API")
+@Tag(name = "dynamodb API", description = "dynamodb 처리 관련 API")
 @RestController
 @RequestMapping("/dynamodb")
 class DynamodbController(

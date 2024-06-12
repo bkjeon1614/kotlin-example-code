@@ -43,6 +43,19 @@ dependencies {
 	// AWS SDK
 	implementation("software.amazon.awssdk:dynamodb-enhanced")
 	implementation(platform("software.amazon.awssdk:bom:2.20.56"))
+
+	// OpenSearch
+	implementation("org.opensearch.client:opensearch-rest-client:2.13.0")
+	implementation("org.opensearch.client:opensearch-java:2.10.0")
+	implementation("jakarta.json:jakarta.json-api:2.1.3")
+
+	// Lib
+	implementation("com.google.code.gson:gson:2.7")
+}
+
+configurations.all {
+	// Spring 6.0 부터 잠재적인 충돌을 방지하기 위한 라이브러리 예외처리 (예외처리 안할 시 spring-jcl Lib > LogFactoryService 에서 불필요 로그 발생)
+	exclude("commons-logging", "commons-logging")
 }
 
 tasks.withType<KotlinCompile> {
