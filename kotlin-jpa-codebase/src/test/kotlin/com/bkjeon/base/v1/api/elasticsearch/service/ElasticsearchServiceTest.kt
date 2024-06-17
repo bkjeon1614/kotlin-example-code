@@ -3,7 +3,6 @@ package com.bkjeon.base.v1.api.elasticsearch.service
 import com.bkjeon.base.feature.repository.elasticsearch.ElasticsearchSampleRepository
 import com.bkjeon.base.v1.api.elasticsearch.model.EsRequest
 import io.kotest.core.spec.style.BehaviorSpec
-import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.test.context.TestConstructor
