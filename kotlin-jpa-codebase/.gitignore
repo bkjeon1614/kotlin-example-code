@@ -38,3 +38,7 @@ out/
 
 ### Kotlin ###
 .kotlin
+
+### Custom ###
+/scripts/docker/nohup.out
+/scripts/docker/db/mysql/data/

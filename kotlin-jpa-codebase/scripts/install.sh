@@ -36,7 +36,7 @@ echo "Data Settig"
 echo "==========================================="
 
 echo '                          (0%)\r'
-sleep 1
+sleep 5
 
 INDEX_NAME="bkjeon_index"
 SETTINGS='{
