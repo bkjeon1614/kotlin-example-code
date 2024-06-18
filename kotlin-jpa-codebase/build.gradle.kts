@@ -62,8 +62,6 @@ dependencies {
 	implementation("org.mapstruct:mapstruct:1.5.5.Final")
 	kapt("org.mapstruct:mapstruct-processor:1.5.5.Final")
 	kaptTest("org.mapstruct:mapstruct-processor:1.5.5.Final")
-	// implementation("org.mapstruct:mapstruct:1.5.5.Final")
-	// annotationProcessor("org.mapstruct:mapstruct-processor:1.5.5.Final")
 
 	// Lib
 	implementation("com.google.code.gson:gson:2.8.9")

@@ -13,7 +13,9 @@ import org.springframework.stereotype.Service
 class ElasticsearchService(
     val esSampleRepository: ElasticsearchSampleRepository
 ) {
-    val converter: EsRequestConverter = Mappers.getMapper(EsRequestConverter::class.java)
+    companion object {
+        val converter: EsRequestConverter = Mappers.getMapper(EsRequestConverter::class.java)
+    }
 
     fun getSampleAggsList(): List<BkjeonIndexAggs> {
         return esSampleRepository.getAggsList(0, 10)
