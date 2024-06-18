@@ -7,6 +7,9 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.5"
 	kotlin("jvm") version kotlinVersion
 	kotlin("plugin.spring") version kotlinVersion
+
+	// MapStruct
+	kotlin("kapt") version "1.7.10"
 }
 
 group = "com.bkjeon"
@@ -53,6 +56,14 @@ dependencies {
 	implementation("org.opensearch.client:opensearch-rest-client:2.13.0")
 	implementation("org.opensearch.client:opensearch-java:2.10.0")
 	implementation("jakarta.json:jakarta.json-api:2.1.3")
+
+	// MapStruct
+	apply(plugin = "kotlin-kapt")
+	implementation("org.mapstruct:mapstruct:1.5.5.Final")
+	kapt("org.mapstruct:mapstruct-processor:1.5.5.Final")
+	kaptTest("org.mapstruct:mapstruct-processor:1.5.5.Final")
+	// implementation("org.mapstruct:mapstruct:1.5.5.Final")
+	// annotationProcessor("org.mapstruct:mapstruct-processor:1.5.5.Final")
 
 	// Lib
 	implementation("com.google.code.gson:gson:2.8.9")
