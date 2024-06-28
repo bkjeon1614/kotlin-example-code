@@ -118,12 +118,12 @@ class ElasticsearchSampleRepository(
                 it)
         }
 
-        if (esBkjeonIndexDto.startDate != null && esBkjeonIndexDto.endDate != null) {
+        if (esBkjeonIndexDto.esStartDate != null && esBkjeonIndexDto.esEndDate != null) {
             requestQuery = EsQueryDslCreateBuilderUtil.addFilterRangeQuery(
                 requestQuery,
                 EsBkjeonIndexType.REG_DATE.field,
-                esBkjeonIndexDto.startDate!!,
-                esBkjeonIndexDto.endDate!!
+                esBkjeonIndexDto.esStartDate!!,
+                esBkjeonIndexDto.esEndDate!!
             )
         }
 
@@ -171,12 +171,12 @@ class ElasticsearchSampleRepository(
                 it)
         }
 
-        if (esBkjeonIndexDto.startDate != null && esBkjeonIndexDto.endDate != null) {
+        if (esBkjeonIndexDto.esStartDate != null && esBkjeonIndexDto.esEndDate != null) {
             EsQueryDslCreateBuilderUtil.addFilterRangeQuery(
                 requestQuery,
                 EsBkjeonIndexType.REG_DATE.field,
-                esBkjeonIndexDto.startDate!!,
-                esBkjeonIndexDto.endDate!!
+                esBkjeonIndexDto.esStartDate!!,
+                esBkjeonIndexDto.esEndDate!!
             )
         }
 

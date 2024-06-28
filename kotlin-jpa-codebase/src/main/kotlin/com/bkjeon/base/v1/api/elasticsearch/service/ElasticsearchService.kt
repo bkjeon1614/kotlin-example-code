@@ -24,8 +24,8 @@ class ElasticsearchService(
     fun getSampleList(request: EsRequest): EsResponseDto {
         val esResponseDto: EsResponseDto = esSampleRepository.getList(
             EsBkjeonIndexDto(
-                startDate = request.startDate,
-                endDate = request.endDate,
+                esStartDate = request.startDate,
+                esEndDate = request.endDate,
                 title = request.title,
                 author = request.author,
                 age = request.age,
