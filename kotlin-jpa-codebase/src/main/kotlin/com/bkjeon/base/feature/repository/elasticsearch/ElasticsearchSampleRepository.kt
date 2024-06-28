@@ -122,8 +122,8 @@ class ElasticsearchSampleRepository(
             requestQuery = EsQueryDslCreateBuilderUtil.addFilterRangeQuery(
                 requestQuery,
                 EsBkjeonIndexType.REG_DATE.field,
-                esBkjeonIndexDto.startDate,
-                esBkjeonIndexDto.endDate
+                esBkjeonIndexDto.startDate!!,
+                esBkjeonIndexDto.endDate!!
             )
         }
 
@@ -175,8 +175,8 @@ class ElasticsearchSampleRepository(
             EsQueryDslCreateBuilderUtil.addFilterRangeQuery(
                 requestQuery,
                 EsBkjeonIndexType.REG_DATE.field,
-                esBkjeonIndexDto.startDate,
-                esBkjeonIndexDto.endDate
+                esBkjeonIndexDto.startDate!!,
+                esBkjeonIndexDto.endDate!!
             )
         }
 

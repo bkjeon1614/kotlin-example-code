@@ -1,13 +1,13 @@
 package com.bkjeon.base.feature.dto.elasticsearch
 
 data class EsBkjeonIndexDto(
-    val startDate: String? = null,
-    val endDate: String? = null,
-    val title: String? = null,
-    val content: String? = null,
-    val author: String? = null,
-    val age: Int? = null,
-    val date: String? = null,
-    val tags: List<String>? = null,
-    val ageNoList: List<String>? = null
+    var startDate: String? = null,
+    var endDate: String? = null,
+    var title: String? = null,
+    var content: String? = null,
+    var author: String? = null,
+    var age: Int? = null,
+    var date: String? = null,
+    var tags: List<String>? = null,
+    var ageNoList: List<String>? = null
 )
