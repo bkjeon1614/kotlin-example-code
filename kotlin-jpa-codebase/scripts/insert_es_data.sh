@@ -1,11 +1,11 @@
 #!/bin/sh
 
 echo "==========================================="
-echo "Data Settig (Elasticsearch)"
+echo "Data Setting (Elasticsearch)"
 echo "==========================================="
 
 echo '                          (0%)\r'
-sleep 5
+sleep 1
 
 INDEX_NAME="bkjeon_index"
 SETTINGS='{
@@ -69,8 +69,6 @@ echo " Index $INDEX_NAME created successfully with settings."
 echo '##############################################   (100%)\r'
 sleep 1
 echo '\n'
-
-
 
 echo "==========================================="
 echo "FINISHED (Elasticsearch)"
