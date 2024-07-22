@@ -75,6 +75,20 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
+  redis:
+    image: redis:latest
+    container_name: redis01
+    ports:
+      - "16379:6379"
+    volumes:
+      - ./redis/data:/data
+      - ./redis/conf/redis.conf:/usr/local/conf/redis.conf
+    labels:
+      - "name=redis"
+      - "mode=standalone"
+    restart: always
+    command: redis-server /usr/local/conf/redis.conf
+
 volumes:
   data01:
     driver: local
