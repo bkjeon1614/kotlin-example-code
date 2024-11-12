@@ -1,6 +1,9 @@
 spring:
+  threads:
+    virtual:
+      enabled: true
   profiles:
-    active: local
+    default: local
   application:
     name: kotlin-jpa-codebase
 
